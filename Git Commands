@@ -26,7 +26,7 @@ git revert  -->  Undoes a committed snapshot. When you discover a faulty commit,
 
 git log  -->  Lets you explore the previous revisions of a project. It provides several formatting options for displaying committed snapshots.
 
-git fetch  -->  Fetching downloads a branch from another repository, along with all of its associated commits and files. But, it doesn't try to integrate anything into your local repository. This gives you a chance to inspect changes before merging them with your project.
+git fetch  -->  git fetch downloads commits, files, and references from a remote repository into your local repository. It updates your remote-tracking branches (like origin/main) but not your local branches (like main)
 
 git config  -->  A convenient way to set configuration options for your Git installation. You’ll typically only need to use this immediately after installing Git on a new development machine.
 
@@ -41,3 +41,7 @@ git stash  -->  The git stash command takes your uncommitted changes (both stage
 git stash pop  -->  Popping your stash removes the changes from your stash and reapplies them to your working copy.
 
 git stash apply  -->  You can reapply the changes to your working copy and keep them in your stash with git stash apply
+
+git remote prune origin  -->  Removes references to remote branches that no longer exist on the remote.
+
+git branch -r --> Display all the remote branches
