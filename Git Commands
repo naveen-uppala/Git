@@ -45,3 +45,7 @@ git stash apply  -->  You can reapply the changes to your working copy and keep 
 git remote prune origin  -->  Removes references to remote branches that no longer exist on the remote.
 
 git branch -r --> Display all the remote branches
+
+git push --set-upstream origin branch_name --> The --set-upstream option links your local branch to a remote branch, simplifying future push and pull operations.
+
+git remote show origin --> The git remote show origin command provides detailed information about the remote repository named origin. This includes details about the remote branches, their tracking status, and other relevant information.
